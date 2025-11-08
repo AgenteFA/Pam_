@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, ScrollView, Image } from "react-native";
 import estilos from './estilos';
 
-
+// Import das imagens
 const vinhoBranco = require('../../assets/vinho-branco.jpg');
 const vinhoRose = require('../../assets/vinho-rose.jpg');
 const vinhoTinto = require('../../assets/vinho-tinto.jpg');
@@ -17,7 +17,13 @@ export default function TelaCatalogo() {
       </Text>
       
       <View style={estilos.vinhoContainer}>
-        <Image source={vinhoBranco} style={estilos.imagemVinho} />
+        <View style={estilos.imagemContainer}>
+          <Image 
+            source={vinhoBranco} 
+            style={estilos.imagemVinho}
+            resizeMode="contain"
+          />
+        </View>
         <View style={estilos.textoContainer}>
           <Text style={estilos.nomeVinho}>Chatigny Chardonnay</Text>
           <Text style={estilos.descricaoVinho}>
@@ -27,7 +33,13 @@ export default function TelaCatalogo() {
       </View>
 
       <View style={estilos.vinhoContainer}>
-        <Image source={vinhoRose} style={estilos.imagemVinho} />
+        <View style={estilos.imagemContainer}>
+          <Image 
+            source={vinhoRose} 
+            style={estilos.imagemVinho}
+            resizeMode="contain"
+          />
+        </View>
         <View style={estilos.textoContainer}>
           <Text style={estilos.nomeVinho}>Concha y Toro Exportacion</Text>
           <Text style={estilos.descricaoVinho}>
@@ -37,7 +49,13 @@ export default function TelaCatalogo() {
       </View>
 
       <View style={estilos.vinhoContainer}>
-        <Image source={vinhoTinto} style={estilos.imagemVinho} />
+        <View style={estilos.imagemContainer}>
+          <Image 
+            source={vinhoTinto} 
+            style={estilos.imagemVinho}
+            resizeMode="contain"
+          />
+        </View>
         <View style={estilos.textoContainer}>
           <Text style={estilos.nomeVinho}>Portada Winemaker's</Text>
           <Text style={estilos.descricaoVinho}>
@@ -47,7 +65,13 @@ export default function TelaCatalogo() {
       </View>
 
       <View style={estilos.vinhoContainer}>
-        <Image source={vinhoSeco} style={estilos.imagemVinho} />
+        <View style={estilos.imagemContainer}>
+          <Image 
+            source={vinhoSeco} 
+            style={estilos.imagemVinho}
+            resizeMode="contain"
+          />
+        </View>
         <View style={estilos.textoContainer}>
           <Text style={estilos.nomeVinho}>Elvio Cogno Ravera Barolo</Text>
           <Text style={estilos.descricaoVinho}>

@@ -4,54 +4,64 @@ const estilos = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f5f5f5',
-    padding: 20,
+    padding: 15, // Padding reduzido
   },
   titulo: {
-    fontSize: 24,
+    fontSize: 20, // Título menor
     fontWeight: 'bold',
     color: '#400303',
     textAlign: 'center',
-    marginBottom: 10,
+    marginBottom: 8,
   },
   descricao: {
-    fontSize: 16,
+    fontSize: 14, // Texto menor
     color: '#666',
     textAlign: 'center',
-    marginBottom: 20,
-    lineHeight: 22,
+    marginBottom: 15,
+    lineHeight: 20,
   },
   vinhoContainer: {
     flexDirection: 'row',
     backgroundColor: '#fff',
-    borderRadius: 8,
-    padding: 15,
-    marginBottom: 15,
-    elevation: 2, // Para Android
-    // Para iOS - use shadow properties corretamente
+    borderRadius: 6,
+    padding: 12, // Padding reduzido
+    marginBottom: 12,
+    elevation: 2,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
-    shadowRadius: 4,
+    shadowRadius: 3,
+    alignItems: 'flex-start',
+    minHeight: 90, // Altura mínima reduzida
+  },
+  imagemContainer: {
+    width: 60, // Container menor
+    height: 90, // Container menor
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 12,
+    backgroundColor: '#f9f9f9',
+    borderRadius: 6,
   },
   imagemVinho: {
-    width: 80,
-    height: 80,
-    borderRadius: 8,
-    marginRight: 15,
+    width: '100%',
+    height: '100%',
+    borderRadius: 6,
   },
   textoContainer: {
     flex: 1,
+    justifyContent: 'center',
   },
   nomeVinho: {
-    fontSize: 18,
+    fontSize: 16, // Fonte menor
     fontWeight: 'bold',
     color: '#400303',
-    marginBottom: 8,
+    marginBottom: 6,
   },
   descricaoVinho: {
-    fontSize: 14,
+    fontSize: 12, // Fonte menor
     color: '#666',
-    lineHeight: 20,
+    lineHeight: 18,
   },
 });
 
