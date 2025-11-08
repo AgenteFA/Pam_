@@ -1,24 +1,31 @@
 import { StyleSheet } from 'react-native';
 
-const estilos = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    width: '100%',
+    height: '100%',
+  },
+  overlay: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: '#f5f5f5',
   },
   titulo: {
-    fontSize: 24,
+    fontSize: 32,
     fontWeight: 'bold',
-    color: '#400303',
-    marginBottom: 10,
+    color: '#ffffffff',
+    marginBottom: 20,
+    textAlign: 'center',
   },
   subtitulo: {
-    fontSize: 16,
+    fontSize: 18,
     textAlign: 'center',
-    color: '#666',
+    color: '#ffffffff',
+    fontWeight: '500',
+    lineHeight: 24,
   },
 });
 
-export default estilos;
+export default styles;
