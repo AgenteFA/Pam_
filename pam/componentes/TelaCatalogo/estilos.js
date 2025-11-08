@@ -22,7 +22,7 @@ const estilos = StyleSheet.create({
   },
   vinhoContainer: {
     flexDirection: 'row',
-    backgroundColor: '#fff',
+    backgroundColor: '#ac484883',
     borderRadius: 6,
     padding: 12, // Padding reduzido
     marginBottom: 12,
@@ -47,7 +47,8 @@ const estilos = StyleSheet.create({
     width: '100%',
     height: '100%',
     borderRadius: 6,
-  },
+    backgroundColor: '#ad494983',
+},
   textoContainer: {
     flex: 1,
     justifyContent: 'center',
